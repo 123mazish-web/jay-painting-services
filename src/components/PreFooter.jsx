@@ -7,7 +7,7 @@ export function PreFooter({ onOpenQuoteModal }) {
       <div className="container">
         <div className="prefooter-card">
           <div className="prefooter-text">
-            <h2>Jay Painting & Decorating</h2>
+            <h2>Jay Painting Services</h2>
             <p>Exceptional Service • Fixed Price Quotes • Guaranteed Craftsmanship</p>
           </div>
           <div className="prefooter-actions">

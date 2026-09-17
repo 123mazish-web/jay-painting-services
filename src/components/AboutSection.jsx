@@ -62,7 +62,7 @@ export function AboutSection({ onOpenQuoteModal }) {
             </div>
 
             <h2 className="section-title">
-              Looking for Top Quality Painting & Decorating Services?
+              Looking for Top Quality Painting Services?
             </h2>
 
             <p className="about-lead-text">
