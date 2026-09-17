@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Logo } from './Logo';
-import { Phone, Mail, MapPin, Clock, Menu, X, ArrowRight, ShieldCheck } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Menu, X, ArrowRight } from 'lucide-react';
 
 export function Navbar({ activePage, setActivePage, onOpenQuoteModal }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -75,17 +75,17 @@ export function Navbar({ activePage, setActivePage, onOpenQuoteModal }) {
             </ul>
           </nav>
 
-          {/* Right Action Button */}
+          {/* Right Action Area */}
           <div className="navbar-actions">
             <button 
-              className="btn btn-primary btn-quote" 
+              className="btn btn-primary btn-quote desktop-only-quote" 
               onClick={onOpenQuoteModal}
             >
               <span>Free Quote</span>
               <ArrowRight size={16} />
             </button>
 
-            {/* Mobile Toggle Button */}
+            {/* Mobile Hamburger Toggle Button */}
             <button
               className="mobile-toggle-btn"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -123,18 +123,15 @@ export function Navbar({ activePage, setActivePage, onOpenQuoteModal }) {
             </nav>
 
             <div className="mobile-drawer-footer">
-              <a href="tel:0410129008" className="mobile-contact-btn">
-                <Phone size={18} />
-                <span>Call Bayat: 0410 129 008</span>
-              </a>
               <button 
-                className="btn btn-primary w-full mt-3"
+                className="btn btn-primary w-full"
                 onClick={() => {
                   setMobileMenuOpen(false);
                   onOpenQuoteModal();
                 }}
               >
-                Get Free Quote
+                <span>Request Free Quote</span>
+                <ArrowRight size={16} />
               </button>
             </div>
           </div>

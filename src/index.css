@@ -2098,11 +2098,11 @@ a {
 }
 
 /* ==========================================================================
-   Responsive Breakpoints
+   Responsive Breakpoints & Mobile Fixes
    ========================================================================== */
 
 @media (max-width: 1024px) {
-  .services-grid {
+  .services-grid, .services-large-img-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -2127,11 +2127,28 @@ a {
     flex-direction: column;
     text-align: center;
   }
+
+  .image-slots-6 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
+  /* Header & Navigation Mobile Fixes */
+  .desktop-only-quote {
+    display: none !important;
+  }
+
   .top-bar-left {
     display: none;
+  }
+
+  .top-bar-inner {
+    justify-content: center;
+  }
+
+  .top-bar-right {
+    font-size: 12px;
   }
 
   .desktop-nav {
@@ -2142,21 +2159,199 @@ a {
     display: block;
   }
 
-  .hero-card {
-    padding: 40px 24px;
-    min-height: 480px;
+  /* Hero Section (Image 1 Fixes) */
+  .hero-section.hero-full-bleed {
+    padding: 0 0 24px;
+  }
+
+  .hero-card-wide {
+    min-height: auto;
+    border-radius: 0 0 24px 24px;
+  }
+
+  .hero-content-container {
+    padding: 36px 16px 32px;
   }
 
   .hero-title {
-    font-size: 36px;
+    font-size: 32px;
+    line-height: 1.18;
+    margin-bottom: 14px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-features {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .hero-feature-pill {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  /* SubPage Banner (Image 2 Fixes) */
+  .subpage-banner {
+    padding: 24px 0 16px;
+  }
+
+  .subpage-banner-card {
+    padding: 32px 16px;
+    border-radius: 20px;
+  }
+
+  .subpage-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .subpage-subtitle {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .subpage-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .subpage-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Callout & PreFooter Banner (Image 3 Fixes) */
+  .callout-section, .prefooter-section {
+    padding: 24px 0;
+  }
+
+  .callout-card, .prefooter-card {
+    padding: 32px 16px;
+    border-radius: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .callout-title, .prefooter-text h2 {
+    font-size: 26px;
+  }
+
+  .callout-desc, .prefooter-text p {
+    font-size: 14px;
+  }
+
+  .callout-actions, .prefooter-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .callout-actions .btn, .prefooter-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Painting Section Zig-Zag Rows (Image 4 Fixes) */
+  .alternating-rows-stack {
+    gap: 36px;
+  }
+
+  .service-zigzag-row {
+    grid-template-columns: 1fr;
+    padding: 24px 16px;
+    border-radius: 20px;
+    gap: 24px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .service-zigzag-row.row-img-right .zigzag-image-col {
+    order: 1;
+  }
+
+  .service-zigzag-row.row-img-right .zigzag-content-col {
+    order: 2;
+  }
+
+  .zigzag-img-wrapper {
+    height: 240px;
+    border-radius: 14px;
+  }
+
+  .zigzag-sub-tag {
+    font-size: 11px;
+  }
+
+  .zigzag-title {
+    font-size: 24px;
+    line-height: 1.25;
+    word-break: break-word;
+  }
+
+  .zigzag-desc {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .zigzag-features-list li {
+    font-size: 13px;
+  }
+
+  .zigzag-action .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Gallery & Our Work Grid (1 Image Per Row - Image 5 Fixes) */
+  .image-slots-grid, .image-slots-6 {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+
+  .image-slot-item {
+    height: 320px !important;
+    border-radius: 16px;
+  }
+
+  /* Services Grid on Mobile */
+  .services-large-img-grid, .services-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .tall-image-card {
+    height: 360px;
   }
 
   .section-title {
-    font-size: 30px;
-  }
-
-  .services-grid, .gallery-grid {
-    grid-template-columns: 1fr;
+    font-size: 28px;
   }
 
   .form-group-row {
@@ -2169,5 +2364,21 @@ a {
 
   .about-features-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* Floating Quick Widget Mobile Position */
+  .floating-quick-widget {
+    bottom: 16px;
+    right: 16px;
+    gap: 8px;
+  }
+
+  .widget-btn {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  .widget-label {
+    font-size: 12px;
   }
 }
