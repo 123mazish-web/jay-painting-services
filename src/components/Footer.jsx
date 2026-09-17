@@ -2,7 +2,7 @@ import React from 'react';
 import { Logo } from './Logo';
 import { Phone, Mail, MapPin, ArrowRight, ShieldCheck, Globe, Share2 } from 'lucide-react';
 
-export function Footer({ activePage, setActivePage, onOpenQuoteModal }) {
+export function Footer({ setActivePage, onOpenQuoteModal }) {
   const handleNav = (pageId) => {
     setActivePage(pageId);
     window.scrollTo({ top: 0, behavior: 'smooth' });

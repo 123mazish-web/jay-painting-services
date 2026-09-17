@@ -1,6 +1,5 @@
 import React from 'react';
 import tallPainterImg from '../assets/about_tall_painter.jpg';
-import exteriorImg from '../assets/exterior_painting.jpg';
 import { Paintbrush, Home, Building2, Palette, ShieldCheck, ArrowRight, Award } from 'lucide-react';
 
 export function AboutSection({ onOpenQuoteModal }) {

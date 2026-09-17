@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import painterImg from '../assets/painter_at_work.jpg';
-import exteriorImg from '../assets/exterior_painting.jpg';
 import heroBg from '../assets/hero_painting_bg.jpg';
 import { HelpCircle, ChevronDown, ChevronUp, ShieldCheck, CheckCircle, PhoneCall } from 'lucide-react';
 
