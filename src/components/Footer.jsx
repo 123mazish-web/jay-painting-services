@@ -92,7 +92,7 @@ export function Footer({ setActivePage, onOpenQuoteModal }) {
                 rel="noopener noreferrer"
                 className="developer-link"
               >
-                Zayed Alam & Team
+                Zayed Bin Alam
               </a>
             </p>
 
