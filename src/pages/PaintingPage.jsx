@@ -5,7 +5,7 @@ import painterImg from '../assets/painter_at_work.jpg';
 import exteriorImg from '../assets/exterior_painting.jpg';
 import commercialImg from '../assets/commercial_painting.jpg';
 import heroBg from '../assets/hero_painting_bg.jpg';
-import { CheckCircle2, ArrowRight, ShieldCheck, Sparkles, Award } from 'lucide-react';
+import { CheckCircle2, ArrowRight } from 'lucide-react';
 
 export function PaintingPage({ onBackToHome, onOpenQuoteModal }) {
   const serviceRows = [
@@ -27,8 +27,8 @@ export function PaintingPage({ onBackToHome, onOpenQuoteModal }) {
     {
       id: 'exterior',
       title: 'Exterior Painting Services',
-      subtitle: 'Weatherproof UV-Resistant Shield for Australian Homes',
-      badge: '10-Year Weatherproof Guarantee',
+      subtitle: 'Weatherproof UV Shield for Melbourne Homes',
+      badge: '10-Yr Weather Guarantee',
       image: exteriorImg,
       imgPosition: 'right',
       desc: 'Protect your property exterior against extreme Australian sun, coastal air, and heavy rain. We restore render, timber weatherboards, eaves, brickwork, and roofs using high-durability UV shielding coatings.',
@@ -42,8 +42,8 @@ export function PaintingPage({ onBackToHome, onOpenQuoteModal }) {
     {
       id: 'commercial',
       title: 'Commercial Painting Services',
-      subtitle: 'Fast, Efficient Turnaround with Zero Business Interruption',
-      badge: 'After-Hours & Weekend Availability',
+      subtitle: 'Fast Turnaround with Zero Interruption',
+      badge: 'After-Hours Availability',
       image: commercialImg,
       imgPosition: 'left',
       desc: 'We provide heavy-duty commercial painting for offices, retail stores, shopping centers, warehouses, and strata complexes. Our flexible scheduling ensures your business operates seamlessly during repaints.',
@@ -57,7 +57,7 @@ export function PaintingPage({ onBackToHome, onOpenQuoteModal }) {
     {
       id: 'residential',
       title: 'Residential Full-House Makeovers',
-      subtitle: 'Comprehensive Whole-House Paint Transformations',
+      subtitle: 'Whole-House Paint Transformations',
       badge: 'Complete Home Solution',
       image: heroBg,
       imgPosition: 'right',
@@ -115,8 +115,8 @@ export function PaintingPage({ onBackToHome, onOpenQuoteModal }) {
                     </ul>
 
                     <div className="zigzag-action">
-                      <button className="btn btn-primary btn-lg" onClick={onOpenQuoteModal}>
-                        <span>Get Quote for {row.title}</span>
+                      <button className="btn btn-primary btn-lg zigzag-btn" onClick={onOpenQuoteModal}>
+                        <span>Request Free Quote</span>
                         <ArrowRight size={18} />
                       </button>
                     </div>

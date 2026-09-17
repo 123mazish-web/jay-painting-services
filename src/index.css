@@ -2272,16 +2272,29 @@ a {
     justify-content: center;
   }
 
-  /* Painting Section Zig-Zag Rows (Image 4 Fixes) */
+  /* Painting Section Zig-Zag Rows Mobile Clean Up */
+  .alternating-services-section {
+    padding: 24px 0;
+    overflow: hidden;
+  }
+
   .alternating-rows-stack {
-    gap: 36px;
+    gap: 28px;
   }
 
   .service-zigzag-row {
     grid-template-columns: 1fr;
-    padding: 24px 16px;
+    padding: 20px 16px;
     border-radius: 20px;
-    gap: 24px;
+    gap: 20px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .zigzag-content-col, .zigzag-image-col {
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
@@ -2296,32 +2309,65 @@ a {
   }
 
   .zigzag-img-wrapper {
-    height: 240px;
+    height: 220px;
     border-radius: 14px;
+    width: 100%;
+  }
+
+  .zigzag-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 4px 10px;
+    font-size: 11px;
+    max-width: 85%;
+    white-space: normal;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
   }
 
   .zigzag-sub-tag {
     font-size: 11px;
+    line-height: 1.4;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    margin-bottom: 6px;
   }
 
   .zigzag-title {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.25;
     word-break: break-word;
+    overflow-wrap: break-word;
+    margin-bottom: 12px;
   }
 
   .zigzag-desc {
     font-size: 14px;
     line-height: 1.5;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    margin-bottom: 16px;
+  }
+
+  .zigzag-features-list {
+    margin-bottom: 20px;
+    gap: 10px;
   }
 
   .zigzag-features-list li {
     font-size: 13px;
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
 
-  .zigzag-action .btn {
-    width: 100%;
-    justify-content: center;
+  .zigzag-btn {
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 12px 16px !important;
+    font-size: 15px !important;
+    white-space: normal !important;
   }
 
   /* Gallery & Our Work Grid (1 Image Per Row - Image 5 Fixes) */
