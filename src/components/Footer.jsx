@@ -19,7 +19,7 @@ export function Footer({ setActivePage, onOpenQuoteModal }) {
               <Logo variant="footer" />
             </div>
             <p className="footer-bio">
-              Jay Painting Services provides high-end interior, exterior, commercial, and residential painting solutions across Australia. Dedicated to quality, durability, and customer satisfaction.
+              Jay Painting Services provides high-end interior, exterior, commercial, and residential painting solutions across Melbourne, VIC and surrounding regions. Dedicated to quality, durability, and customer satisfaction.
             </p>
             <div className="footer-socials">
               <a href="#" className="social-btn" aria-label="Facebook">
@@ -40,7 +40,7 @@ export function Footer({ setActivePage, onOpenQuoteModal }) {
             <ul className="footer-contact-list">
               <li>
                 <MapPin size={18} className="footer-icon" />
-                <span>Australia Wide Services</span>
+                <span>Melbourne, VIC & Surrounding Suburbs</span>
               </li>
               <li>
                 <Phone size={18} className="footer-icon text-red" />
@@ -97,7 +97,7 @@ export function Footer({ setActivePage, onOpenQuoteModal }) {
             </p>
 
             <div className="footer-bottom-links">
-              <span>Licensed & Insured Painter Australia</span>
+              <span>Licensed & Insured Painter in Melbourne, VIC</span>
             </div>
           </div>
         </div>

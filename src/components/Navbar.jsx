@@ -27,7 +27,7 @@ export function Navbar({ activePage, setActivePage, onOpenQuoteModal }) {
           <div className="top-bar-left">
             <span className="top-info-item">
               <MapPin size={15} className="top-icon" />
-              <span>Serving All Major Cities & Regions across Australia</span>
+              <span>Serving Melbourne, VIC & Surrounding Suburbs</span>
             </span>
             <span className="top-divider">|</span>
             <span className="top-info-item">

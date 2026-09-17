@@ -21,7 +21,7 @@ export function ContactPage({ onBackToHome, onOpenQuoteModal }) {
     <div className="page-wrapper">
       <SubPageBanner 
         title="Contact Us" 
-        subtitle="Get in touch with Bayat for a free quote, site inspection, or inquiries regarding our painting services in Australia." 
+        subtitle="Get in touch with Bayat for a free quote, site inspection, or inquiries regarding our painting services in Melbourne, VIC." 
         onBackToHome={onBackToHome}
         onOpenQuoteModal={onOpenQuoteModal}
       />
@@ -66,7 +66,7 @@ export function ContactPage({ onBackToHome, onOpenQuoteModal }) {
                   </div>
                   <div className="contact-card-text">
                     <h4>Service Coverage</h4>
-                    <p className="contact-val">Australia Wide</p>
+                    <p className="contact-val">Melbourne, VIC & Surrounding Suburbs</p>
                     <p className="contact-sub text-slate">Interior, Exterior, Commercial & Residential</p>
                   </div>
                 </div>

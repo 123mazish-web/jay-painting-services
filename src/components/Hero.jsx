@@ -18,7 +18,7 @@ export function Hero({ onOpenQuoteModal, onExploreServices }) {
             {/* Top Sub-Badge */}
             <div className="hero-badge">
               <Award size={16} className="badge-icon" />
-              <span>Australia's Trusted Painting Specialists</span>
+              <span>Melbourne's Trusted Painting Specialists</span>
             </div>
 
             {/* Main Headline */}
@@ -31,7 +31,7 @@ export function Hero({ onOpenQuoteModal, onExploreServices }) {
             <p className="hero-description">
               Transform your interior and exterior spaces with Jay Painting Services. 
               We deliver high-end finishings, weather-resistant exterior coats, and precision 
-              residential and commercial painting across Australia.
+              residential and commercial painting across Melbourne and surrounding suburbs.
             </p>
 
             {/* Action Buttons */}

@@ -75,7 +75,7 @@ export function PaintingPage({ onBackToHome, onOpenQuoteModal }) {
     <div className="page-wrapper">
       <SubPageBanner 
         title="Our Painting Services" 
-        subtitle="Professional interior, exterior, commercial, and residential painting solutions tailored for Australian properties." 
+        subtitle="Professional interior, exterior, commercial, and residential painting solutions tailored for Melbourne properties." 
         onBackToHome={onBackToHome}
         onOpenQuoteModal={onOpenQuoteModal}
       />

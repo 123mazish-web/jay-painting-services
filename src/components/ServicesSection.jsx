@@ -63,7 +63,8 @@ export function ServicesSection({ onOpenQuoteModal }) {
           </div>
           <h2 className="section-title">Professional Painting Solutions</h2>
           <p className="section-subtitle">
-            Click any service card to view full specifications, feature inclusions, and quote details.
+            Tailored painting services delivered across Melbourne with meticulous craftsmanship, 
+            premium materials, and fixed-price transparency.
           </p>
         </div>
 

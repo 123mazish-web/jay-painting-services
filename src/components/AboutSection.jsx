@@ -66,7 +66,7 @@ export function AboutSection({ onOpenQuoteModal }) {
             </h2>
 
             <p className="about-lead-text">
-              At <strong>Jay Painting Services</strong>, we bring expertise, precision, and passion to every brush stroke. Led by Bayat, our team delivers premium painting solutions across Australia with zero compromise on quality.
+              At <strong>Jay Painting Services</strong>, we bring expertise, precision, and passion to every brush stroke. Led by Bayat, our team delivers premium painting solutions across Melbourne, VIC and surrounding suburbs with zero compromise on quality.
             </p>
 
             <p className="about-body-text">
